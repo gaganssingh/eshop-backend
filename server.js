@@ -1,9 +1,12 @@
-require("dotenv").config();
-const express = require("express");
-const morgan = require("morgan");
-const cors = require("cors");
+import dotenv from "dotenv";
+import express from "express";
+import morgan from "morgan";
+import cors from "cors";
 
-const STORE = require("./data/STORE");
+import STORE from "./data/STORE.js";
+
+// INITIALIZE ENV VARIABLES
+dotenv.config();
 
 // INITIALIZING APP VARIABLE
 const app = express();

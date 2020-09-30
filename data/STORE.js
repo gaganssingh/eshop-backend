@@ -79,4 +79,4 @@ const STORE = [
     },
 ];
 
-module.exports = STORE;
+export default STORE;
