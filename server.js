@@ -18,8 +18,10 @@ connectDB();
 const app = express();
 
 // MIDDLEWARES
-app.use(morgan("dev")); // Basic logger
-app.use(cors());
+if (process.env.NODE_ENV !== "production") {
+    app.use(morgan("dev")); // Basic logger
+}
+app.use(cors()); // Allow CORS requests
 
 // MOUNT ROUTES
 // Generic Route
