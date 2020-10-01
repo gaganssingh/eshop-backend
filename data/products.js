@@ -39,7 +39,7 @@ const products = [
         name: "Off-White x Air Jordan V",
         image: "/images/jordanv.png",
         description:
-            "Virgil Abloh added a second Jordan silhouette to his series of Nike collaborations with the Jordan 5 Retro High Off-White Black, now available on StockX. This release pays homage to the first Jordan that Virgil ever owned, the Air Jordan 5 Black Metallic. In signature fashion, Virgil has reimagined this classic silhouette in a way that embraces the importance of Nike Air technology.",
+            "Virgil Abloh added a second Jordan silhouette to his series of Nike collaborations with the Jordan 5 Retro High Off-White Black. This release pays homage to the first Jordan that Virgil ever owned, the Air Jordan 5 Black Metallic. In signature fashion, Virgil has reimagined this classic silhouette in a way that embraces the importance of Nike Air technology.",
         brand: "Nike",
         category: "Shoes",
         price: 519.99,
