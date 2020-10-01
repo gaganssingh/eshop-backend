@@ -6,6 +6,7 @@ import colors from "colors";
 
 import connectDB from "./config/db.js";
 import productRoutes from "./routes/productRoutes.js";
+import { unknownRoute, errorHandler } from "./middleware/errorMiddleware.js";
 
 // INITIALIZE ENV VARIABLES
 dotenv.config();
@@ -26,6 +27,10 @@ app.get("/", (req, res) => res.json({ message: "Hello World!" }));
 
 // /api/product
 app.use("/api/products", productRoutes);
+
+// ERROR HANDLER MIDDLEWARES
+app.use(unknownRoute); // Unknown route handler
+app.use(errorHandler); // Generic error handler
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () =>
