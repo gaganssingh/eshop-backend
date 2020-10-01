@@ -71,6 +71,30 @@ const products = [
         rating: 4,
         numReviews: 12,
     },
+    {
+        name: "Nike Air Jordan XXXIV",
+        image: "/images/jordanxxxiv.png",
+        description:
+            "Introducing the Air Jordan XXXIV Low, a game shoe that’s laser-focused on reducing design elements to make it as light as possible. It has the same shape and features of the inline 34, with some tweaks.",
+        brand: "Nike",
+        category: "Shoes",
+        price: 215.0,
+        countInStock: 3,
+        rating: 4,
+        numReviews: 1,
+    },
+    {
+        name: "Puma Sky Dreamer",
+        image: "/images/skydreamer.png",
+        description:
+            "Basketball flash was highkey special in the 80s. The hair was big. The dunks were bigger. And if you wanted to flex, you were soaring in a pair of big and bold mid-tops. With the Sky Dreamer, we’re keeping the 80s design vibes alive with our iconic mid-top silhouette but infusing a touch of today’s style with J. Cole’s Dreamville “Dreamer” emblem.",
+        brand: "Puma",
+        category: "Shoes",
+        price: 130.0,
+        countInStock: 8,
+        rating: 4.5,
+        numReviews: 9,
+    },
 ];
 
 export default products;
