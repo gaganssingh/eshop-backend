@@ -25,6 +25,7 @@ const productSchema = mongoose.Schema(
     {
         user: {
             // Create a reference to the userSchema
+            // to refer to the admin that created this product
             type: mongoose.Schema.Types.ObjectId,
             required: true,
             ref: "User", // Which schema to refer to?

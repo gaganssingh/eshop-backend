@@ -5,7 +5,7 @@ import cors from "cors";
 import colors from "colors";
 
 import connectDB from "./config/db.js";
-import STORE from "./data/STORE.js";
+import products from "./data/products.js";
 
 // INITIALIZE ENV VARIABLES
 dotenv.config();
@@ -23,10 +23,10 @@ app.use(cors());
 // Generic Route
 app.get("/", (req, res) => res.json({ message: "Hello World!" }));
 
-app.get("/api/products", (req, res) => res.json(STORE));
+app.get("/api/products", (req, res) => res.json(products));
 
 app.get("/api/products/:id", (req, res) => {
-    const product = STORE.find((p) => p._id === req.params.id);
+    const product = products.find((p) => p._id === req.params.id);
     res.json(product);
 });
 

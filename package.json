@@ -6,12 +6,15 @@
     "type": "module",
     "scripts": {
         "start": "node server.js",
-        "dev": "nodemon server.js"
+        "dev": "nodemon server.js",
+        "data:import": "node data/seedData.js import",
+        "data:destroy": "node data/seedData.js destroy"
     },
     "keywords": [],
     "author": "Gagan Singh",
     "license": "ISC",
     "dependencies": {
+        "bcryptjs": "^2.4.3",
         "colors": "^1.4.0",
         "cors": "^2.8.5",
         "dotenv": "^8.2.0",
